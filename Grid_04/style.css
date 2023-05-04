@@ -1,0 +1,10 @@
+.row {
+    margin-bottom: 10px;
+}
+
+.row div div {
+    background-color: pink;
+    border: 3px solid black;
+    padding: 3px;
+    text-align: center;
+}
