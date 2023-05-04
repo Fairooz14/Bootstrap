@@ -1,0 +1,29 @@
+img {
+    height: 10%;
+    width: 20%;
+}
+
+.img-fluid {
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* 
+Insert Comment 
+
+.test {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    background: pink;
+}
+
+span {
+    width: 100px;
+    margin: auto;
+    display: block;
+}
+*/
