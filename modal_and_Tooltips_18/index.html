@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Modal and Tooltips</title>
+</head>
+
+<body>
+    <h1>Modal Centered and Scrollable</h1>
+
+    <div class="container mt-3">
+        <button class="btn btn-success" data-bs-target="#modal" data-bs-toggle="modal">
+            Sign Up
+        </button>
+        <div class="modal fade" id="modal">
+            <div class="modal-dialog modal-dialog-sm-down modal-sm modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sigh Up!! Its Fee</h5>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <form action="#">
+                            <label for="">Email:</label>
+                            <input type="text" placeholder="example@gmail.com" required><br><br>
+
+                            <label for="#">Password:</label>
+                            <input type="password" required>
+                        </form>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed expedita, aliquid voluptatibus, earum, voluptatem unde, eveniet vel est hic possimus dolor ut nostrum enim quibusdam. Pariatur aperiam fuga mollitia atque, iste, in. Voluptatum beatae consequuntur quasi maiores rem architecto numquam esse explicabo illo nobis atque dolores nisi, vitae, adipisci ab, placeat? Pariatur, hic, tempore. Eveniet rem sapiente, earum sed ab tempore odit qui dignissimos aspernatur nam numquam, similique obcaecati repellat voluptatibus quidem eligendi nisi inventore, tenetur dolorem dolores iste aliquam quaerat enim! Odio ea, culpa eveniet modi veniam commodi illum, ex labore, voluptate hic molestiae quas consequatur suscipit dolore enim!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed expedita, aliquid voluptatibus, earum, voluptatem unde, eveniet vel est hic possimus dolor ut nostrum enim quibusdam. Pariatur aperiam fuga mollitia atque, iste, in. Voluptatum beatae consequuntur quasi maiores rem architecto numquam esse explicabo illo nobis atque dolores nisi, vitae, adipisci ab, placeat? Pariatur, hic, tempore. Eveniet rem sapiente, earum sed ab tempore odit qui dignissimos aspernatur nam numquam, similique obcaecati repellat voluptatibus quidem eligendi nisi inventore, tenetur dolorem dolores iste aliquam quaerat enim! Odio ea, culpa eveniet modi veniam commodi illum, ex labore, voluptate hic molestiae quas consequatur suscipit dolore enim!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-bs-dismiss="modal">
+                            Close
+                        </button>
+                        <button class="btn btn-primary">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>Tooltips</h1>
+    <div class="container mt-5">
+        <button class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right" title="Hellooooo">Hover me!</button><br><br>
+
+        <button class="btn btn-success" data-bs-toggle="tooltip" data-bs-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>" data-bs-placement="right">Hover me!</button>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+    </script>
+
+</body>
+
+</html>
